@@ -120,12 +120,14 @@ export class InitService {
           title: '#LDS#Attestation',
           sorting: '20',
           items: [
+            /**
             {
               id: 'ATT_Attestation_MyAttestationCases',
               route: 'attestation/myattestationcases',
               title: '#LDS#Menu Entry My attestations',
               sorting: '20-10',
             },
+            */
             {
               id: 'ATT_Attestation_PendingAttestations',
               route: 'attestation/decision',
