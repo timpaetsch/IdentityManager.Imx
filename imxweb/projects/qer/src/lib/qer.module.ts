@@ -66,6 +66,7 @@ import { TilesModule } from './tiles/tiles.module';
 import { UserModule } from './user/user.module';
 import { BusinessOwnerChartSummaryComponent } from './wport/businessowner-chartsummary/businessowner-chartsummary.component';
 import { StartComponent } from './wport/start/start.component';
+import { LinkToPwResetPortalTileComponent } from './link-to-pw-reset-portal-tile/link-to-pw-reset-portal-tile.component';
 
 export function initConfig(config: QerService): () => Promise<any> {
   return () =>
@@ -115,6 +116,7 @@ const routes: Routes = [
     RecaptchaModule,
     DataViewModule,
     QueueStatusComponent,
+    LinkToPwResetPortalTileComponent
   ],
   providers: [
     {
