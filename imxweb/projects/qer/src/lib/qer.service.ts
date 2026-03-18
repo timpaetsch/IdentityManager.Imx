@@ -32,6 +32,7 @@ import { ProductDependencyCheckComponent } from './shopping-cart-validation-deta
 import { ShoppingCartValidationDetailService } from './shopping-cart-validation-detail/shopping-cart-validation-detail.service';
 import { ClassloggerService, ExtService } from 'qbm';
 import { QueueStatusComponent } from './queue/queue-status/queue-status.component';
+import { LinkToPwResetPortalTileComponent } from './link-to-pw-reset-portal-tile/link-to-pw-reset-portal-tile.component'; 
 
 @Injectable({
   providedIn: 'root',
@@ -51,5 +52,12 @@ export class QerService {
     this.extService.register('queueMastButton', {
       instance: QueueStatusComponent,
     });
+    
+    this.logger.info(this, '✅ LinkToPwResetPortalTile registriert'); // NEU
+    // NEU
+    this.extService.register('Dashboard-MediumTiles', {
+      instance: LinkToPwResetPortalTileComponent,
+    });
+
   }
 }
