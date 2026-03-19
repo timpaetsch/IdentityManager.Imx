@@ -33,6 +33,7 @@ import { ShoppingCartValidationDetailService } from './shopping-cart-validation-
 import { ClassloggerService, ExtService } from 'qbm';
 import { QueueStatusComponent } from './queue/queue-status/queue-status.component';
 import { LinkToPwResetPortalTileComponent } from './link-to-pw-reset-portal-tile/link-to-pw-reset-portal-tile.component'; 
+import { LinkToAdminPortalTileComponent } from './link-to-admin-portal-tile/link-to-admin-portal-tile.component'; 
 
 @Injectable({
   providedIn: 'root',
@@ -57,6 +58,12 @@ export class QerService {
     // NEU
     this.extService.register('Dashboard-MediumTiles', {
       instance: LinkToPwResetPortalTileComponent,
+    });
+
+    // NEU
+    this.logger.info(this, '✅ LinkToAdminPortalTile registriert'); // NEU
+    this.extService.register('Dashboard-MediumTiles', {
+      instance: LinkToAdminPortalTileComponent,
     });
 
   }

@@ -1,0 +1,10 @@
+<imx-icon-tile caption="Admin Portal" image="admin" [subtitle]="description"
+    *ngIf="ShowAdminPortalTile()">
+  <ng-template #ActionTemplate>
+    <button mat-button color="primary" (click)="openInNewTab()">
+      <span>{{ '#LDS#Click Here' | translate }}</span>
+      &nbsp;
+      <eui-icon size="m" icon="forward"></eui-icon>
+    </button>
+  </ng-template>
+</imx-icon-tile>
