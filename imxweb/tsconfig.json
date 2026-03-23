@@ -24,7 +24,11 @@
       "dpr": ["dist/dpr"],
       "dpr/*": ["dist/dpr/*"],
       "o3t": ["dist/o3t"],
-      "o3t/*": ["dist/o3t/*"],
+      "o3t/*": [
+        "dist/o3t/*"
+      ],
+      "onboarding": ["dist/onboarding"],
+      "onboarding/*": ["dist/onboarding/*"],
       "qbm": ["dist/qbm"],
       "qbm/*": ["dist/qbm/*"],
       "qer": ["dist/qer"],
